@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class paintcost {
 
 	public static void main(String[] args) {
@@ -6,24 +6,59 @@ public class paintcost {
 		/*
 		 * Calculate cost to paint a house
 		 */
-		double houselengthfeet;
-		double houselengthinches;
-		double housewidthfeet;
-		double housewidthinches;
-		double househeightfeet;
-		double hosueheightinches;
-		double windowlengthfeet;
-		double windowlengthinches;
-		double windowwidthfeet;
-		double windowwidthinches;
-		double windownumbers;
-		double doorlengthfeet;
-		double doorlengthinches;
-		double doorwidthfeet;
-		double doorwidthinches;
-		double doornumber;
-		double cost;
-
+		
+		int houselengthfeet;
+		int houselengthinches;
+		int housewidthfeet;
+		int housewidthinches;
+		int househeightfeet;
+		int househeightinches;
+		int windowlengthfeet;
+		int windowlengthinches;
+		int windowwidthfeet;
+	    int windowwidthinches;
+		int windownumbers;
+		int doorlengthfeet;
+		int doorlengthinches;
+		int doorwidthfeet;
+		int doorwidthinches;
+		int doornumber;
+		int cost;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Please enter length of wall in feet:");
+		houselengthfeet= in.nextInt();
+		System.out.println("please enter remaining length of wall in inches:");
+		houselengthinches=in.nextInt();
+		System.out.println("Please enter width of wall in feet:");
+		housewidthfeet=in.nextInt();
+		System.out.println("please enter remaining length of wall in inches:");
+		housewidthinches=in.nextInt();
+		System.out.println("please enter height of house");
+		househeightfeet=in.nextInt();
+		System.out.println("please enter remaining height of house in inches:");
+		househeightinches=in.nextInt();
+		System.out.println("please enter the number of windows the house has:");
+		windownumbers=in.nextInt();
+		System.out.println("please enter length of windows in feet:");
+		windowlengthfeet=in.nextInt();
+		System.out.println("please enter remaining length of windows in inches:");
+		windowlengthinches=in.nextInt();
+		System.out.println("please enter width of windows in feet:");
+		windowwidthfeet=in.nextInt();
+		System.out.println("please enter remaining width of windows in inches:");
+		windowwidthinches=in.nextInt();
+		System.out.println("please state the number of doors on the house:");
+		doornumber=in.nextInt();
+		System.out.println("please enter the length of the doors in feet:");
+		doorlengthfeet=in.nextInt();
+		System.out.println("please enter the remaining length of the doors in inches:");
+		doorlengthinches=in.nextInt();
+		System.out.println("please enter the width of the doors in feet:");
+		doorwidthfeet=in.nextInt();
+		System.out.println("Please enter the remaining width of the doors in inches:");
+		doorwidthinches=in.nextInt();
+		System.out.println("please state the cost:");
+		cost=in.nextInt();
 	}
 
 }
