@@ -19,6 +19,7 @@ public class Cardecision {
 		double hybridcar4;
 		double regularcar5;
 		double hybridcar5;
+		
 		Scanner in = new Scanner(System.in);
 		System.out.println("State the cost of a regular car: ");
 		costofregularcar=in.nextInt();
@@ -32,6 +33,7 @@ public class Cardecision {
 		milestraveled=in.nextInt();
 		System.out.println("what is cost of gas: ");
 		costpergallonofgas=in.nextDouble();
+		
 		regularcar1= (((milestraveled/mpgregularcar)*costpergallonofgas)+costofregularcar);
 		hybridcar1=(((milestraveled/mpghybridcar)*costpergallonofgas)+costhybridcar);
 		System.out.println("Cost to own after year 1 for regular car:"+regularcar1+"or hybrid car:"+hybridcar1);
