@@ -19,14 +19,21 @@ public class Cardecision {
 		double hybridcar4;
 		double regularcar5;
 		double hybridcar5;
-		
+		String stickerHybrid = "Make:Toyota,Model:Prius,Cost:31000,MPG:30";
+		String stickerRegular= "Make:Toyota,Model:Corolla,Cost:28000,MPG:20";
+		String [] stuffH = stickerHybrid.split(",");
+		String [] stuffR = stickerRegular.split(","); 
 		Scanner in = new Scanner(System.in);
-		System.out.println("State the cost of a regular car: ");
-		costofregularcar=in.nextInt();
-		System.out.println("State the Miles per gallon of a regular car: ");
-		mpgregularcar=in.nextInt();
-		System.out.println("State the cost of a hybrid car: ");
-		costhybridcar=in.nextInt();
+		String[]costR= stuffR[2].split(":");
+		System.out.println("State the cost of a regular car: "+costR[1]);
+		costofregularcar=Integer.parseInt(costR[1]);
+		String[]mpgR= stuffR[3].split(":");
+		System.out.println("State the Miles per gallon of a regular car:"+mpgR[1]);
+		mpgregularcar=Integer.parseInt(mpgR[1]);
+		
+		String[]costH= stuffH[2].split(":");
+		System.out.println("State the cost of a hybrid car: "+costH[1]);
+		costhybridcar=Integer.parseInt(costH[1]);
 		System.out.println("state the miles per gallion of a hybrid car:");
 		mpghybridcar=in.nextInt();
 		System.out.println("state miles traveled: ");
