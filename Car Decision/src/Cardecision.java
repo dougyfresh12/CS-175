@@ -34,8 +34,9 @@ public class Cardecision {
 		String[]costH= stuffH[2].split(":");
 		System.out.println("State the cost of a hybrid car: "+costH[1]);
 		costhybridcar=Integer.parseInt(costH[1]);
-		System.out.println("state the miles per gallion of a hybrid car:");
-		mpghybridcar=in.nextInt();
+		String[]mpgH=stuffH[3].split(":");
+		System.out.println("state the miles per gallion of a hybrid car:"+mpgH[1]);
+		mpghybridcar=Integer.parseInt(mpgH[1]);
 		System.out.println("state miles traveled: ");
 		milestraveled=in.nextInt();
 		System.out.println("what is cost of gas: ");
@@ -43,19 +44,23 @@ public class Cardecision {
 		
 		regularcar1= (((milestraveled/mpgregularcar)*costpergallonofgas)+costofregularcar);
 		hybridcar1=(((milestraveled/mpghybridcar)*costpergallonofgas)+costhybridcar);
-		System.out.println("Cost to own after year 1 for regular car:"+regularcar1+"or hybrid car:"+hybridcar1);
+		String[]makeR= stuffR[0].split(":");
+		String[]modelR= stuffR[1].split(":");
+		String[]makeH= stuffH[0].split(":");
+		String[]modelH= stuffH[1].split(":");
+		System.out.println("Cost to own after year 1 for "+makeR[1]+" "+modelR[1]+":"+regularcar1+" for "+makeH[1]+" "+modelH[1]+":"+hybridcar1);
 		regularcar2=(((milestraveled/mpgregularcar)*costpergallonofgas)+regularcar1);
 		hybridcar2=(((milestraveled/mpghybridcar)*costpergallonofgas)+hybridcar1);
-		System.out.println("Cost to own after year 2 for regular car:"+regularcar2+"for hybrid car:"+hybridcar2);
+		System.out.println("Cost to own after year 2 for "+makeR[1]+" "+modelR[1]+":"+regularcar2+" for "+makeH[1]+" "+modelH[1]+":"+hybridcar2);
 		regularcar3=(((milestraveled/mpgregularcar)*costpergallonofgas)+regularcar2);
 		hybridcar3=(((milestraveled/mpgregularcar)*costpergallonofgas)+hybridcar2);
-		System.out.println("Cost to own after year 3 for regular car:"+regularcar3+"for hybrid car:"+hybridcar3);
+		System.out.println("Cost to own after year 3 for "+makeR[1]+" "+modelR[1]+":"+regularcar3+" for "+makeH[1]+" "+modelH[1]+":"+hybridcar3);
 		regularcar4=(((milestraveled/mpgregularcar)*costpergallonofgas)+regularcar3);
 		hybridcar4=(((milestraveled/mpgregularcar)*costpergallonofgas)+hybridcar3);
-		System.out.println("Cost to own after year 4 for regular car:"+regularcar4+"for hybrid car:"+hybridcar4);
+		System.out.println("Cost to own after year 4 for "+makeR[1]+" "+modelR[1]+":"+regularcar4+" for "+makeH[1]+" "+modelH[1]+":"+hybridcar4);
 		regularcar5=(((milestraveled/mpgregularcar)*costpergallonofgas)+regularcar4);
 		hybridcar5=(((milestraveled/mpgregularcar)*costpergallonofgas)+hybridcar4);
-		System.out.println("Cost to own after year 5 for regular car:"+regularcar5+"for hybrid car:"+hybridcar5);
+		System.out.println("Cost to own after year 5 for "+makeR[1]+" "+modelR[1]+":"+regularcar5+" for "+makeH[1]+" "+modelH[1]+":"+hybridcar5);
 		
 		
 		
