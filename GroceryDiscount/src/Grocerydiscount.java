@@ -5,8 +5,8 @@ public class Grocerydiscount {
 		// TODO Auto-generated method stub
 		double cost;
 		Scanner in = new Scanner(System.in);
-		while(true) {
 		System.out.println("state the cost of your grocieris: ");
+		while(in.hasNextDouble()) {
 		cost=in.nextDouble();
 		if (cost==0) {
 			break;
@@ -27,6 +27,8 @@ public class Grocerydiscount {
 		double cost4=cost*.14;
 			System.out.printf("you win a discount coupon of %5.2f (14 percent of purchase)",cost4);
 		}
+		
+		
 	
 		}
 		
