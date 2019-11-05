@@ -5,13 +5,17 @@ public class gpa {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		double numgrade=0;
-		
+		while(true) {
+		System.out.println("enter cource name: ");
+		String cource=sc.next();
 		System.out.println("enter the grade: ");
 		String grade = sc.next();
-	
-        
-
-       
+		System.out.println("enter number of credits: ");
+		int credits=sc.nextInt();
+        	if(cource.equals("q")) {
+        		break;
+        	}
+        	else {
         if(grade.substring(0,1).equals("A")) {
             numgrade = 4.0;
         } else if(grade.substring(0,1).equals("B")) {
@@ -31,10 +35,10 @@ public class gpa {
                 numgrade = numgrade - .3;
             }
             }
-            
-        System.out.println("Your gpa is "+numgrade);
+        	}
+        System.out.println(cource+" credits "+credits+"gp is " +numgrade*credits);
        
 	}
-
+	}
 }
 
