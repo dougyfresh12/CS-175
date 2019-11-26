@@ -21,11 +21,11 @@ public class Cards {
 			
 			card = 1+generator.nextInt(52);
 			yourHand[i]=card;
-			System.out.println("palyer two "+yourHand[i]);
+			System.out.println("player two "+yourHand[i]);
 		}
 		for(int j=0;j<5;j++) {
 			if (myHand[j]>=1&&myHand[j]<=13){
-			{countH=countH+1;};
+			
 			countH++;
 			}
 			else if(myHand[j]>=14&&myHand[j]<=26) {
@@ -46,6 +46,7 @@ public class Cards {
 					mysuit="Clubs";
 				else if(countS>countD&&countS>countC&&countS>countH)
 					mysuit="Spades";
+			System.out.println("My Suit: "+mysuit);
 		
 			 card=0;
 			 countH=0;
@@ -76,6 +77,7 @@ public class Cards {
 				yoursuit="Clubs";
 			else if(countS>countD&&countS>countC&&countS>countH)
 				yoursuit="Spades";
+			System.out.println("your Suit: "+yoursuit);
 		}
 		
 
